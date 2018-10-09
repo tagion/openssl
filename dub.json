@@ -8,7 +8,9 @@
 	"configurations" : [
 	    {
 		"name": "library",
-		"targetType": "sourceLibrary",
+		"targetType": "staticLibrary",
+		"sourcePaths": ["deimos/openssl"],
+                "dflags": ["-main"],
 	    },
 	    {
 		"name": "unittest",
