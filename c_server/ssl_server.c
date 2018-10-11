@@ -7,8 +7,9 @@
 #include <string.h>
 
 void init_openssl() {
-        SSL_library_init();
-        SSL_load_error_strings();
+        //Still works with any init??
+        //SSL_library_init();
+       // SSL_load_error_strings();
 }
 
 SSL_CTX *create_context() {
@@ -29,6 +30,7 @@ SSL_CTX *create_context() {
 
 void configure_context(SSL_CTX *ctx)
 {
+    //obsolete
     //SSL_CTX_set_ecdh_auto(ctx, 1);
 
     /* Set the key and cert */
