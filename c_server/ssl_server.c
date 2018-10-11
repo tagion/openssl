@@ -95,6 +95,7 @@ int main () {
         const char reply[] = "test\n";
 
         int client = accept(sock, (struct sockaddr*)&addr, &len);
+        printf("client is:%d", client);
         if (client < 0) {
             perror("Unable to accept");
             exit(EXIT_FAILURE);
